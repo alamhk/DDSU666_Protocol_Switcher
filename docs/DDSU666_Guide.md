@@ -21,7 +21,7 @@ By default, the meter uses the **DL/T 645-2007** protocol, common in Chinese ele
 - **Broadcast Address**: `AAAAAAAAAAAA` can be used for reading if only one meter is on the bus.
 
 ### Reading Data:
-Use `read_dsu666_645.py` to fetch basic data like voltage and energy in this mode.
+Use `read_ddsu666_645.py` to fetch basic data like voltage and energy in this mode.
 
 ---
 
@@ -34,7 +34,7 @@ To use the meter with standard industrial systems, you must switch it to **Modbu
    `68 [ADDR_REV] 68 14 0E 33 33 35 3D 35 33 33 33 33 33 33 33 33 33 [CS] 16`
    - `[ADDR_REV]`: Your meter address in reversed byte order.
    - `[CS]`: Checksum of the frame.
-3. **Execution**: Run `dsu666_protocol_tool.py`.
+3. **Execution**: Run `ddsu666_protocol_tool.py`.
 4. **Verification**: 
    - Observe the meter display. The text **"DL/T 645"** should change to **"Modbus"**.
    - The next screen will show the new **Modbus ID** (e.g., `064`) and **Baud Rate** (e.g., `baud-3` for 9600).
@@ -88,11 +88,11 @@ To clear the total energy count (Active and Reverse) to zero:
 ### Switch Back to DL/T 645:
 If you need to revert the meter for testing or verification:
 - **Target**: Write `1` to Register `0x0005`.
-- **Script**: `dsu666_protocol_tool.py`.
+- **Script**: `ddsu666_protocol_tool.py`.
 - **Effect**: The meter will immediately stop responding to Modbus and return to DL/T 645 mode.
 
 ---
 ## 5. References & Credits
-- **Research on Protocol Switching**: Special thanks to **Ahchor** for providing the foundational research and method for switching the DSU666 protocol. 
+- **Research on Protocol Switching**: Special thanks to **Ahchor** for providing the foundational research and method for switching the DDSU666 protocol. 
   - [Reference Article (Chinese)](https://www.alihai5.com/post/IOT%2FDDSU666%E5%9E%8B%E5%8D%95%E7%9B%B8%E7%94%B5%E5%AD%90%E5%BC%8F%E7%94%B5%E8%83%BD%E8%A1%A8%E5%88%87%E6%8D%A2%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE)
 - **Tool Refinement**: Research and code optimization by **Antigravity AI**.

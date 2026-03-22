@@ -1,6 +1,6 @@
 # DDSU666 Protocol Switcher
 
-This repository provides tools and documentation for managing the **Chint (Zhengtai) DSU666** single-phase smart meter. Specifically, it addresses the common issue where Chinese domestic versions of the meter default to the **DL/T 645** protocol, making them incompatible with standard **Modbus RTU** industrial systems.
+This repository provides tools and documentation for managing the **Chint (Zhengtai) DDSU666** single-phase smart meter. Specifically, it addresses the common issue where Chinese domestic versions of the meter default to the **DL/T 645** protocol, making them incompatible with standard **Modbus RTU** industrial systems.
 
 ## Key Features
 - **Protocol Migration**: Bidirectional switching between DL/T 645 and Modbus RTU.
@@ -17,7 +17,7 @@ The Chinese version of the **DDSU666** predominantly uses the DL/T 645-2007 prot
 ## Quick Start
 1. **Switch Protocol**:
    ```powershell
-   python dsu666_protocol_tool.py
+   python ddsu666_protocol_tool.py
    ```
    The tool will scan for your meter and prompt you to switch modes.
 2. **Reset Energy**:
@@ -32,16 +32,16 @@ The Chinese version of the **DDSU666** predominantly uses the DL/T 645-2007 prot
 ---
 
 ## 鳴謝 (Acknowledgments)
-- 特別鳴謝 **Ahchor 師兄** 提供 DSU666 協議切換的關鍵研究資料 ([參考鏈接](https://www.alihai5.com/post/IOT%2FDDSU666%E5%9E%8B%E5%8D%95%E7%9B%B8%E7%94%B5%E5%AD%90%E5%BC%8F%E7%94%B5%E8%83%BD%E8%A1%A8%E5%88%87%E6%8D%A2%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE))。
+- 特別鳴謝 **Ahchor 師兄** 提供 DDSU666 協議切換的關鍵研究資料 ([參考鏈接](https://www.alihai5.com/post/IOT%2FDDSU666%E5%9E%8B%E5%8D%95%E7%9B%B8%E7%94%B5%E5%AD%90%E5%BC%8F%E7%94%B5%E8%83%BD%E8%A1%A8%E5%88%87%E6%8D%A2%E9%80%9A%E8%AE%AF%E5%8D%8F%E8%AE%AE))。
 - 代碼與文檔的優化及研究由 **Google Antigravity AI** 協助完成。
 
-Special thanks to **Ahchor** for providing the critical research for DSU666 protocol switching. Much appreciation also to **Google Antigravity AI** for the assistance in research and code refinement for this project.
+Special thanks to **Ahchor** for providing the critical research for DDSU666 protocol switching. Much appreciation also to **Google Antigravity AI** for the assistance in research and code refinement for this project.
 
 ---
 
-# 正泰 DSU666 協議切換工具 (DSU666 Protocol Switcher)
+# 正泰 DDSU666 協議切換工具 (DDSU666 Protocol Switcher)
 
-本倉庫提供了管理 **正泰 (Chint) DSU666** 單相智能電錶的工具與文檔。它主要解決了一個常見問題：中國國內版本的電錶預設使用 **DL/T 645** 協議，導致無法直接與標準的 **Modbus RTU** 工業系統兼容。
+本倉庫提供了管理 **正泰 (Chint) DDSU666** 單相智能電錶的工具與文檔。它主要解決了一個常見問題：中國國內版本的電錶預設使用 **DL/T 645** 協議，導致無法直接與標準的 **Modbus RTU** 工業系統兼容。
 
 ## 主要功能
 - **協議轉換**：支援 DL/T 645 與 Modbus RTU 之間的雙向切換。
@@ -58,7 +58,7 @@ Special thanks to **Ahchor** for providing the critical research for DSU666 prot
 ## 快速開始
 1. **切換協議**：
    ```powershell
-   python dsu666_protocol_tool.py
+   python ddsu666_protocol_tool.py
    ```
    工具將掃描您的電錶並提示您切換模式。
 2. **重置電量**：
